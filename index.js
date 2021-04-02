@@ -18,7 +18,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 // console.log(uri);
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
-    console.log('connection err', err)
+    console.log('connection errrrrrrr', err)
     const eventCollection = client.db("fresh-valley").collection("products");
     const ordersCollection = client.db("fresh-valley").collection("orders");
     console.log('database connection');

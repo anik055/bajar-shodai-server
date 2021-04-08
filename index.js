@@ -25,7 +25,7 @@ client.connect(err => {
     const newOrder = client.db("fresh-valley").collection("newOrder");
     // console.log(eventCollection)
   
-    app.get('/events', (req, res) => {
+    app.get('/products', (req, res) => {
         eventCollection.find()
         .toArray((err, items) => {
             res.send(items);
